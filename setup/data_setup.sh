@@ -35,4 +35,7 @@ ls $source/cat|gshuf|tail -n20 |while read f; do cp -ip $source/cat/$f $dist/tra
 mkdir -p valid/dog
 mkdir -p valid/cat
 ls $source/dog|gshuf|tail -n10 |while read f; do cp -ip $source/dog/$f $dist/valid/dog; done;
-ls $source/cat|gshuf|tail -n10 |while read f; do cp -ip $source/cat/$f $dist/valid/cat; done
+ls $source/cat|gshuf|tail -n10 |while read f; do cp -ip $source/cat/$f $dist/valid/cat; done;
+#clone jermy's github
+cd ../../..
+git clone git@github.com:pmjn6/dogs-vs-cats.git
