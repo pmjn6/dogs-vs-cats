@@ -39,3 +39,4 @@ ls $source/cat|gshuf|tail -n10 |while read f; do cp -ip $source/cat/$f $dist/val
 #clone pejman's github
 cd ../../..
 git clone git@github.com:pmjn6/dogs-vs-cats.git
+mkdir dogs-vs-cats/models
